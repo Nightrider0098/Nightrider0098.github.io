@@ -1,11 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hitesh Choudhary</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
+<style>
+    .linkHolder {
+        -webkit-font-smoothing: antialiased;
+        color: rgba(0, 0, 0, 0.87);
+        height: 32px;
+        border: none;
+        display: inline-flex;
+        outline: none;
+        padding: 0;
+        font-size: 0.8125rem;
+        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        box-sizing: border-box;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        align-items: center;
+        white-space: nowrap;
+        border-radius: 16px;
+        vertical-align: middle;
+        justify-content: center;
+        text-decoration: none;
+        background-color: #e0e0e0;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        margin: 8px;
+    }
+
+    .spanText {
+        -webkit-font-smoothing: antialiased;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 0.8125rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        box-sizing: inherit;
+        cursor: inherit;
+        display: flex;
+        align-items: center;
+        user-select: none;
+        white-space: nowrap;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .icon-holder {
+        -webkit-font-smoothing: antialiased;
+        white-space: nowrap;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        box-sizing: inherit;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        align-items: center;
+        flex-shrink: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        user-select: none;
+        border-radius: 50%;
+        justify-content: center;
+        background-color: white;
+        width: 32px;
+        color: #308ffc;
+        height: 32px;
+        font-size: 1rem;
+        margin-right: -4px;
+    }
+
+    .website-symbol {
+        width: 300px;
+
+    }
+
+    .image-holder {
+        border-radius: 50%;
+        width: 300px;
+
+    }
+
+    .media {
+        background: rgb(194, 182, 194);
+        background: linear-gradient(90deg, rgba(194, 182, 194, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+</style>
+
 <body>
-    Its my name
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 align-content-center">
+                <div class="container " style="height: 100%;">
+                    <div class="image-holder1">
+                        <img class="image-holder" src="images/edited_img1.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="media">
+                    <img class="mr-3 website-symbol" src="./images/pathya.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Pathya Samagri
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">ReactJs</span>
+                            </a>
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">NodeJs</span>
+                            </a>
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">ExpressJs</span>
+                            </a>
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">MySQL</span>
+                            </a>
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">PassportJS</span>
+                            </a>
+                        </h5>
+                        Website to Donate books. Meant for collage newbies to get access to books donated by seniors and
+                        Facullty.
+                    </div>
+                </div>
+
+                <div class="media">
+                    <img class="mr-3 website-symbol" src="./images/describe-database.png"
+                        alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Describe Database
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">ReactJs</span>
+                            </a>
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">NodeJs</span>
+                            </a>
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">ExpressJs</span>
+                            </a>
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">MongoDb</span>
+                            </a>
+                        </h5>
+                        Website to manage database. Services Available for Mysql,PostgrSQL,MsSQL.
+                        Facullty.
+                    </div>
+                </div>
+
+
+                <div class="media">
+                    <img class="mr-3 website-symbol" src="./images/issue-page.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Github IssuePages
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">MERN</span>
+                            </a>
+                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                <span class="spanText">BootStrap</span>
+                            </a>
+                        </h5>
+                        Create github issue pages from scratch. Using BookStrap and MERN technologies.
+                        Facullty.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
