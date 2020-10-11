@@ -9,9 +9,11 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 </head>
 <style>
-    html,body {
+    html,
+    body {
         height: 100%;
     }
 
@@ -79,13 +81,18 @@
     }
 
     .website-symbol {
-        width: 300px;
+        width: 250px;
+        margin: auto;
+        margin:15px;
+        /* margin-top: 15px; */
+
 
     }
 
     .image-holder {
         border-radius: 50%;
         width: 300px;
+        /* margin:15px */
 
     }
 
@@ -96,13 +103,45 @@
         padding: 20px;
         margin-bottom: 10px;
     }
+
+    .profile-image-card {
+        padding-top: 50px;
+    }
+
+    @media(min-width: 768px) {
+        .profile-image-card {
+            padding-top: 70px;
+            margin: auto;
+        }
+    }
+
+
+    .card-deck .card {
+        display: block;
+        flex-basis: 100%;
+        max-width: 400px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    @media(min-width: 768px) {
+
+        .card-deck .card {
+            display: block;
+            flex-basis: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+    }
+
+    }
 </style>
 
 <body>
-    <div class="container-fluid h-100" >
+    <div class="container-fluid h-100 mt-3">
         <div class="row h-100">
-            <div class="col-sm-3 h-100">
-                <div class="container align-baseline">
+            <div class="col-lg-3 h-100">
+                <div class="container mb-auto mt-auto profile-image-card">
                     <div class="image-holder1 text-center">
                         <img class="image-holder" src="images/edited_img1.jpg">
                     </div>
@@ -120,71 +159,79 @@
 
                 </div>
             </div>
-            <div class="col-sm-9">
-                <div class="media">
-                    <img class="mr-3 website-symbol" src="./images/pathya.png" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h5 class="mt-0">Pathya Samagri
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">ReactJs</span>
-                            </a>
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">NodeJs</span>
-                            </a>
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">ExpressJs</span>
-                            </a>
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">MySQL</span>
-                            </a>
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">PassportJS</span>
-                            </a>
-                        </h5>
-                        Website to Donate books. Meant for collage newbies to get access to books donated by seniors and
-                        Facullty.
+            <div class="ui divider"></div>
+            <div class="col-lg-9 h-100">
+                <div class="card-deck">
+                    <div class="card" style="width: 20rem;">
+                        <img class="mr-3 website-symbol" src="./images/pathya.png" alt="Generic placeholder image">
+                        <div class="card-body">
+                            <h5 class="mt-0">Pathya Samagri
+                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                    <span class="spanText">MERN</span>
+                                </a>
+                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                    <span class="spanText">PassportJS</span>
+                                </a>
+                                
+                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                    <span class="spanText">MySQL</span>
+                                </a>
+                            </h5>
+
+                            <p class="card-text">Website to Donate books. Meant for collage newbies to get access to
+                                books
+                                donated by seniors and Facullty.</p>
+                            <a href="https://pathya-samagri.herokuapp.com/" class="btn btn-dark">Website</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                        <img class="mr-3 website-symbol" src="./images/describe-database.png"
+                            alt="Generic placeholder image">
+                        <div class="card-body">
+                            <h5 class="mt-0">Describe Database
+                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                    <span class="spanText">MERN</span>
+                                </a>
+                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                    <span class="spanText">PostgreSQL</span>
+                                </a>
+
+                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                    <span class="spanText">MySQL</span>
+                                </a>
+
+                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                    <span class="spanText">Ms-SQL</span>
+                                </a>
+                            </h5>
+
+                            <p class="card-text">Website to manage database. Services Available for
+                                Mysql,PostgrSQL,MsSQL.
+                                Facullty.</p>
+                            <a href="https://database-describe.herokuapp.com/" class="btn btn-dark">Website</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                        <img class="mr-3 website-symbol" src="./images/issue-page.png" alt="Generic placeholder image">
+                        <div class="card-body">
+                            <h5 class="mt-0">Github IssuePages
+                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                    <span class="spanText">MERN</span>
+                                </a>
+
+                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
+                                    <span class="spanText">BootStrap</span>
+                                </a>
+                            </h5>
+
+                            <p class="card-text">Create github issue pages from scratch. Using BookStrap and MERN
+                                technologies Facullty.</p>
+                            <a href="http://github-issuepage-clone.herokuapp.com/" class="btn btn-dark">Website</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="media">
-                    <img class="mr-3 website-symbol" src="./images/describe-database.png"
-                        alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h5 class="mt-0">Describe Database
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">ReactJs</span>
-                            </a>
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">NodeJs</span>
-                            </a>
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">ExpressJs</span>
-                            </a>
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">MongoDb</span>
-                            </a>
-                        </h5>
-                        Website to manage database. Services Available for Mysql,PostgrSQL,MsSQL.
-                        Facullty.
-                    </div>
-                </div>
 
-
-                <div class="media">
-                    <img class="mr-3 website-symbol" src="./images/issue-page.png" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h5 class="mt-0">Github IssuePages
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">MERN</span>
-                            </a>
-                            <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                <span class="spanText">BootStrap</span>
-                            </a>
-                        </h5>
-                        Create github issue pages from scratch. Using BookStrap and MERN technologies.
-                        Facullty.
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -197,6 +244,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
 
 </body>
 
