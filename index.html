@@ -2,248 +2,211 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hitesh Choudhary</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitesh Choudhary</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+
+  <style>
+
+  </style>
+
 </head>
-<style>
-    html,
-    body {
-        height: 100%;
-    }
-
-    .linkHolder {
-        -webkit-font-smoothing: antialiased;
-        color: rgba(0, 0, 0, 0.87);
-        height: 32px;
-        border: none;
-        display: inline-flex;
-        outline: none;
-        padding: 0;
-        font-size: 0.8125rem;
-        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-        box-sizing: border-box;
-        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        align-items: center;
-        white-space: nowrap;
-        border-radius: 16px;
-        vertical-align: middle;
-        justify-content: center;
-        text-decoration: none;
-        background-color: #e0e0e0;
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        margin: 8px;
-    }
-
-    .spanText {
-        -webkit-font-smoothing: antialiased;
-        color: rgba(0, 0, 0, 0.87);
-        font-size: 0.8125rem;
-        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        -webkit-tap-highlight-color: transparent;
-        box-sizing: inherit;
-        cursor: inherit;
-        display: flex;
-        align-items: center;
-        user-select: none;
-        white-space: nowrap;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .icon-holder {
-        -webkit-font-smoothing: antialiased;
-        white-space: nowrap;
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        box-sizing: inherit;
-        display: flex;
-        position: relative;
-        overflow: hidden;
-        align-items: center;
-        flex-shrink: 0;
-        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        user-select: none;
-        border-radius: 50%;
-        justify-content: center;
-        background-color: white;
-        width: 32px;
-        color: #308ffc;
-        height: 32px;
-        font-size: 1rem;
-        margin-right: -4px;
-    }
-
-    .website-symbol {
-        width: 250px;
-        margin: auto;
-        margin:15px;
-        /* margin-top: 15px; */
-
-
-    }
-
-    .image-holder {
-        border-radius: 50%;
-        width: 300px;
-        /* margin:15px */
-
-    }
-
-    .media {
-        background: rgb(194, 182, 194);
-        background: linear-gradient(90deg, rgba(194, 182, 194, 1) 0%, rgba(255, 255, 255, 1) 100%);
-        border-radius: 20px;
-        padding: 20px;
-        margin-bottom: 10px;
-    }
-
-    .profile-image-card {
-        padding-top: 50px;
-    }
-
-    @media(min-width: 768px) {
-        .profile-image-card {
-            padding-top: 70px;
-            margin: auto;
-        }
-    }
-
-
-    .card-deck .card {
-        display: block;
-        flex-basis: 100%;
-        max-width: 400px;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-
-    @media(min-width: 768px) {
-
-        .card-deck .card {
-            display: block;
-            flex-basis: 100%;
-            max-width: 300px;
-            margin: auto;
-        }
-    }
-
-    }
-</style>
 
 <body>
-    <div class="container-fluid h-100 mt-3">
-        <div class="row h-100">
-            <div class="col-lg-3 h-100">
-                <div class="container mb-auto mt-auto profile-image-card">
-                    <div class="image-holder1 text-center">
-                        <img class="image-holder" src="images/edited_img1.jpg">
-                    </div>
-                    <div class="text-center">
-                        <h4><strong>Hitesh Choudhary</strong></h4>
-                        <h4><small class="text-muted">Software Developer</small></h4>
-                        <a href="https://www.linkedin.com/in/hitesh-choudhary-6472abaa/"><i
-                                class="fab fa-linkedin-in"></i> linkedin link</a><br>
-                        <a href="mailto:hitesh08011999@gmail.com"><i class="far fa-envelope"></i>
-                            hitesh08011999@gmail.com</a><br>
-                        <a
-                            href="https://drive.google.com/file/d/1-pH0DjPtoxmbuMcDYGq3ibJVd6d1YVap/view?usp=sharing">Resume</a>
 
-                    </div>
+  <div>
 
-                </div>
-            </div>
-            <div class="ui divider"></div>
-            <div class="col-lg-9 h-100">
-                <div class="card-deck">
-                    <div class="card" style="width: 20rem;">
-                        <img class="mr-3 website-symbol" src="./images/pathya.png" alt="Generic placeholder image">
-                        <div class="card-body">
-                            <h5 class="mt-0">Pathya Samagri
-                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                    <span class="spanText">MERN</span>
-                                </a>
-                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                    <span class="spanText">PassportJS</span>
-                                </a>
-                                
-                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                    <span class="spanText">MySQL</span>
-                                </a>
-                            </h5>
+    <div class="row h-100">
+      <div class="col-lg-3 h-100 ">
+        <div class=" profile-image-card ">
+          <div class="image-holder1 text-center ">
+            <img class="image-holder" src="images/edited_img1.jpg">
+          </div>
+          <div class="text-center">
+            <h4><strong>Hitesh Choudhary</strong></h4>
+            <h4><small class="text-muted">Software Developer</small></h4>
+            <a href="https://www.linkedin.com/in/hitesh-choudhary-6472abaa/"><i class="fab fa-linkedin-in"></i> linkedin
+              link</a><br>
+            <a href="mailto:hitesh08011999@gmail.com"><i class="far fa-envelope"></i>
+              hitesh08011999@gmail.com</a><br>
+            <a href="https://drive.google.com/file/d/1-pH0DjPtoxmbuMcDYGq3ibJVd6d1YVap/view?usp=sharing">Resume</a>
 
-                            <p class="card-text">Website to Donate books. Meant for collage newbies to get access to
-                                books
-                                donated by seniors and Facullty.</p>
-                            <a href="https://pathya-samagri.herokuapp.com/" class="btn btn-dark">Website</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 20rem;">
-                        <img class="mr-3 website-symbol" src="./images/describe-database.png"
-                            alt="Generic placeholder image">
-                        <div class="card-body">
-                            <h5 class="mt-0">Describe Database
-                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                    <span class="spanText">MERN</span>
-                                </a>
-                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                    <span class="spanText">PostgreSQL</span>
-                                </a>
-
-                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                    <span class="spanText">MySQL</span>
-                                </a>
-
-                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                    <span class="spanText">Ms-SQL</span>
-                                </a>
-                            </h5>
-
-                            <p class="card-text">Website to manage database. Services Available for
-                                Mysql,PostgrSQL,MsSQL.
-                                Facullty.</p>
-                            <a href="https://database-describe.herokuapp.com/" class="btn btn-dark">Website</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 20rem;">
-                        <img class="mr-3 website-symbol" src="./images/issue-page.png" alt="Generic placeholder image">
-                        <div class="card-body">
-                            <h5 class="mt-0">Github IssuePages
-                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                    <span class="spanText">MERN</span>
-                                </a>
-
-                                <a role="button" class="linkHolder" tabindex="0" href="#chip">
-                                    <span class="spanText">BootStrap</span>
-                                </a>
-                            </h5>
-
-                            <p class="card-text">Create github issue pages from scratch. Using BookStrap and MERN
-                                technologies Facullty.</p>
-                            <a href="http://github-issuepage-clone.herokuapp.com/" class="btn btn-dark">Website</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-9 p-2 h-100">
+        <div class="card-deck ml-3">
+
+          <div class="card-website">
+            <div class="card-image-holder">
+              <!-- <div class="dummy-image"> -->
+              <img class="mr-3 dummy-image" src="./images/pathya1.png" alt="Generic placeholder image">
+
+              <!-- </div> -->
+            </div>
+            <div class="card-website-body">
+              <div class="card-website-text">
+                <h1>Pathya Samagri </h1>
+                <i>Website to Donate books. Meant for collage newbies to get access to books donated by seniors and
+                  Facullty.</i>
+              </div>
+              <div class="card-icon-wrapper">
+                <div class="card-icon-holder">
+                  <img class="card-icon"
+                    src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/026/full/react.png" height="35px">
+                </div>
+                <div class="card-icon-holder">
+                  <img class="card-icon" src="https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png"
+                    height="35px">
+                </div>
+
+                <div class="card-icon-holder">
+                  <img class="card-icon" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_960_720.png"
+                    height="35px">
+                </div>
+              </div>
+              <div class="card-website-link-holder">
+                <a href="https://pathya-samagri.herokuapp.com/"> <button class="card-website-link">
+                    Website
+                  </button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card-website">
+            <div class="card-image-holder">
+              <img class="mr-3 dummy-image" src="./images/describe-database 1.png" alt="Generic placeholder image">
+
+              <!-- <div class="dummy-image">
+              </div> -->
+            </div>
+            <div class="card-website-body">
+              <div class="card-website-text">
+                <h1>Describe Database</h1>
+                <i>Website to manage database. Services Available for Mysql,PostgrSQL,MsSQL.</i>
+              </div>
+              <div class="card-icon-wrapper">
+                <div class="card-icon-holder">
+                  <img class="card-icon"
+                    src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/026/full/react.png" height="35px">
+                </div>
+                <div class="card-icon-holder">
+                  <img class="card-icon" src="https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png"
+                    height="35px">
+                </div>
+
+                <div class="card-icon-holder">
+                  <img class="card-icon" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_960_720.png"
+                    height="35px">
+                </div>
+
+                <div class="card-icon-holder">
+                  <img class="card-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
+                    height="35px">
+                </div>
+
+              </div>
+              <div class="card-website-link-holder">
+                <a href="https://database-describe.herokuapp.com/"> <button class="card-website-link">
+                    Website
+                  </button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card-website">
+            <div class="card-image-holder">
+              <img class="mr-3 dummy-image"
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                alt="Generic placeholder image">
+
+              <!-- <div class="dummy-image"> -->
+              <!-- </div> -->
+            </div>
+            <div class="card-website-body">
+              <div class="card-website-text">
+                <h1>Github IssuePages</h1>
+                <i>Create github issue pages from scratch. Using BookStrap and MERN technologies.</i>
+              </div>
+              <div class="card-icon-wrapper">
+                <div class="card-icon-holder">
+                  <img class="card-icon"
+                    src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/026/full/react.png" height="35px">
+                </div>
+                <div class="card-icon-holder">
+                  <img class="card-icon" src="https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png"
+                    height="35px">
+                </div>
+
+                <div class="card-icon-holder">
+                  <img class="card-icon" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_960_720.png"
+                    height="35px">
+                </div>
+              </div>
+              <div class="card-website-link-holder">
+                <a href="http://github-issuepage-clone.herokuapp.com/"> <button class="card-website-link">
+                    Website
+                  </button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card-website">
+            <div class="card-image-holder">
+              <!-- <div class="dummy-image"> -->
+              <img class="mr-3 dummy-image" src="./images/nse.jpg" alt="Generic placeholder image">
+
+              <!-- </div> -->
+            </div>
+            <div class="card-website-body">
+              <div class="card-website-text">
+                <h1>NSE WebScrapper</h1>
+                <i>To Abstract important information from nseindia website using selenium. Fetch important information used daily. Also fetch datafrom archives.</i>
+              </div>
+              <div class="card-icon-wrapper">
+                <div class="card-icon-holder">
+                  <img class="card-icon"
+                    src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/026/full/react.png" height="35px">
+                </div>
+                <div class="card-icon-holder">
+                  <img class="card-icon" src="https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png"
+                    height="35px">
+                </div>
+
+                <div class="card-icon-holder">
+                  <img class="card-icon" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_960_720.png"
+                    height="35px">
+                </div>
+              </div>
+              <div class="card-website-link-holder">
+                <a href="https://github.com/Nightrider0098/Webscrapper_for_stocks_nse"> <button class="card-website-link">
+                    Project Link
+                  </button></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
     <script src="semantic/dist/semantic.min.js"></script>
 
 </body>
