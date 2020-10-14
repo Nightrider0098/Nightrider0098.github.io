@@ -5,17 +5,17 @@
 
 html,
 body {
-  height: 100%;
-  background: #123c69;
+  height: 100vh;
 }
 
 /* all the things related to catds */
 
 .card-website-wrapper {
   margin: auto;
-margin-top: 35px;;
+  margin-top: 35px;
+  ;
   margin-bottom: 35px;
-  
+
 }
 
 .card-website {
@@ -36,6 +36,11 @@ margin-top: 35px;;
 
 }
 
+
+.card-deck {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 
 .dummy-image {
   /*   position: relative; */
@@ -179,41 +184,110 @@ margin-top: 35px;;
   margin-bottom: 10px;
 }
 
-.profile-image-card {
+
+.card-icon-wrapper {
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+
+}
+
+.card-icon-holder {
+  display: inline-block;
+}
+
+
+.left-panel {
   background-color: #EEE2DC;
+  padding-top: 50px;
+  /* height: ; */
 }
 
-@media(min-width: 570px) {
-  .profile-image-card {
-    position: fixed;
-    width: 25%;
+.right-panel {
+  background: #123c69;
+  padding-top: 50px;
+}
+
+@media(max-width:578px) {
+  .panel-wrapper {
     height: 100%;
-    padding-top: 50px;
+  }
+
+  .left-panel {
+    height: 100%;
 
   }
+
+
+
+  .vertically-alligner {
+
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 }
 
-
-@media(max-width: 570px) {
-  .profile-image-card {
-    position: static;
-    padding-top: 70px;
-    margin: auto;
-  }
+.dummy-panel {
+  display: none;
 }
 
+@media (min-width:578px) {
 
-@media(min-width: 570px) {
-
-
-  .card-icon-wrapper {
-    padding: 10px;
-    /*   padding-top: 20px; */
-    width: fit-content;
-    margin: auto;
-
+  .panel-wrapper {
+    display: flex;
   }
 
-  .card-icon-holder {
+  .left-panel {
+    /* width: 25%; */
+    position: fixed;
+    /* top:0; */
+    /* display: inline-block; */
+    min-width: 300px;
+    height: 100%;
+  }
+
+  .dummy-panel {
+    width: 25%;
     display: inline-block;
+    min-width: 300px;
   }
+
+  .right-panel {
+    display: inline-block;
+    /* width: 75%; */
+    min-width: 300px;
+
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hidden-link {
+  display: block;
+  color: rgb(33, 37, 41) !important;
+  text-decoration: none !important;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: auto;
+  width: fit-content;
+  font-family: "Fredoka One", cursive;
+  font-size: 22px;
+  margin-bottom: 7px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hidden-link :hover {
+  text-decoration: none !important;
+  /* color: */
+  color: rgb(33, 37, 41) !important;
+}
