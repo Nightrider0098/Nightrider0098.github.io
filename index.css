@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@1,100&display=swap");
-
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
-
-
-html,
-body {
+html, body {
   height: 100vh;
 }
 
@@ -15,27 +11,22 @@ body {
   margin-top: 35px;
   ;
   margin-bottom: 35px;
-
 }
 
 .card-website {
-
   max-width: 300px;
   min-width: 150px;
   display: block;
   min-height: 200px;
   border-radius: 10px;
   background-color: white;
-
   -webkit-box-shadow: 10px 10px 6px -6px #202124;
   -moz-box-shadow: 10px 10px 6px -6px #202124;
   box-shadow: 10px 10px 6px -6px #202124;
   /* padding:10px; */
   /* margin: 25px 10px 20px 50px; */
   /* margin: 0 15px 0 15px; */
-
 }
-
 
 .card-deck {
   margin-left: 0 !important;
@@ -96,7 +87,6 @@ body {
   border-radius: 8px;
   border: none;
   width: 100px;
-
 }
 
 .card-website-link-holder {
@@ -104,10 +94,10 @@ body {
   width: fit-content;
   position: relative;
   top: 35px;
-
 }
 
 /* button that holds links */
+
 .linkHolder {
   -webkit-font-smoothing: antialiased;
   color: rgba(0, 0, 0, 0.87);
@@ -149,6 +139,7 @@ body {
 }
 
 /* small icon that holds the smaller symbols of technologies */
+
 .icon-holder {
   -webkit-font-smoothing: antialiased;
   white-space: nowrap;
@@ -184,18 +175,15 @@ body {
   margin-bottom: 10px;
 }
 
-
 .card-icon-wrapper {
   padding: 10px;
   width: fit-content;
   margin: auto;
-
 }
 
 .card-icon-holder {
   display: inline-block;
 }
-
 
 .left-panel {
   background-color: #EEE2DC;
@@ -212,23 +200,16 @@ body {
   .panel-wrapper {
     height: 100%;
   }
-
   .left-panel {
     height: 100%;
-
   }
-
-
-
   .vertically-alligner {
-
     margin: 0;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
 }
 
 .dummy-panel {
@@ -236,11 +217,11 @@ body {
 }
 
 @media (min-width:578px) {
-
   .panel-wrapper {
     display: flex;
+    align-items: center;
+    height: 100%;
   }
-
   .left-panel {
     /* width: 25%; */
     position: fixed;
@@ -249,18 +230,18 @@ body {
     min-width: 300px;
     height: 100%;
   }
-
   .dummy-panel {
-    width: 25%;
+    width: 300px;
     display: inline-block;
     min-width: 300px;
   }
-
   .right-panel {
     display: inline-block;
-    /* width: 75%; */
-    min-width: 300px;
-
+    /* display: i */
+    width: 100%;
+    padding-left: 30px;
+    height: 100%;
+    /* min-width: 300px; */
   }
 }
 
