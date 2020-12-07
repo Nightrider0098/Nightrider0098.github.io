@@ -233,7 +233,6 @@ html, body {
   .dummy-panel {
     width: 300px;
     display: inline-block;
-    min-width: 300px;
   }
   .right-panel {
     display: inline-block;
